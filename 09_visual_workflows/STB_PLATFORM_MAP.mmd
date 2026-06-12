@@ -1,0 +1,25 @@
+flowchart TD
+    A[Business Pressure Test] --> B{Routing Decision}
+    B -->|Needs stabilization| C[Spark Lab STB Sprint]
+    B -->|Ready for deeper build| F[Build While You Heal]
+    B -->|Too early / not ready| R[Resource Path]
+    B -->|Specialist need| S[Specialist Lane]
+
+    C --> D[First Doorway Built]
+    D --> E[30-Day Continuity OS]
+    E --> G{Next Best Path}
+    G -->|Stable and simple| H[Lean Business Rhythm]
+    G -->|Ready to expand| F
+    G -->|Needs more support| E
+
+    subgraph STB_Core[STB Core Promise]
+      C
+      D
+      E
+    end
+
+    subgraph Boundaries[Outside STB]
+      S
+      F
+      R
+    end
