@@ -1,0 +1,21 @@
+flowchart LR
+    A[Overwhelmed] --> B[Seen]
+    B --> C[One Calm Room]
+    C --> D[First Doorway]
+    D --> E[One Proof Action]
+    E --> F[Evidence]
+    F --> G[Confidence]
+    G --> H[Self-Sustaining Rhythm]
+
+    subgraph Client_Interface[Client-facing experience]
+      B
+      C
+      D
+      E
+    end
+
+    subgraph Transformation[Transformation path]
+      F
+      G
+      H
+    end
